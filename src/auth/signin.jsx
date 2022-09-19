@@ -159,7 +159,7 @@ const Logins = (props) => {
   // }
 
   return (
-    <Container fluid={true} className='p-0'>
+    <Container fluid={true} className='p-0 login-page'>
       <Row>
         <Col xs='12'>
           <div className='login-card'>
@@ -208,7 +208,7 @@ const Logins = (props) => {
                         </div>
                       </div>
                       <div className='login-btn mb-0'>
-                        <div className='checkbox ms-3'>
+                        <div className='checkbox ms-1'>
                           <Input id='checkbox1' type='checkbox' />
                           <Label className='text-muted' for='checkbox1'>
                             {RememberPassword}
@@ -218,17 +218,17 @@ const Logins = (props) => {
                           {ForgotPassword}
                         </a>
                         {selected === 'firebase' ? (
-                          <Button color='primary' disabled={loading ? loading : loading} onClick={(e) => loginAuth(e)}>
+                          <Button className="d-block w-100" color='primary' disabled={loading ? loading : loading} onClick={(e) => loginAuth(e)}>
                             {loading ? 'LOADING...' : SignIn}
                           </Button>
                         ) : (
-                          <Button color='primary' onClick={() => loginWithJwt(email, password)}>
+                          <Button className="d-block w-100" color='primary' onClick={() => loginWithJwt(email, password)}>
                             {LoginWithJWT}
                           </Button>
                         )}
                       </div>
                       <h6 className='text-muted mt-4 or'>{'Or Sign in with'}</h6>
-                      <div className='social mt-4'>
+                      <div className='social text-center mt-4'>
                         <div className='btn-showcase'>
                           <Button color='light' onClick={facebookAuth}>
                             <Facebook className='txt-fb' />
@@ -241,7 +241,7 @@ const Logins = (props) => {
                           </Button>
                         </div>
                       </div>
-                      <p className='mt-4 mb-0'>
+                      <p className='mt-4 text-center mb-0'>
                         {"Don't have account?"}
                         <a className='ms-2' href='#javascript'>
                           {CreateAccount}

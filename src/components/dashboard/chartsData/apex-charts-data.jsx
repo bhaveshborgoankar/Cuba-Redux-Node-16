@@ -540,7 +540,16 @@ export const Marketvalue = {
       }
     },
     colors: [primary],
-
+    responsive: [{
+      breakpoint: 480,
+      options: {
+        plotOptions: {
+          radar: {
+            size: 80,
+          }
+        }
+      }
+    }],
     markers: {
       size: 6,
       colors: ['#fff'],

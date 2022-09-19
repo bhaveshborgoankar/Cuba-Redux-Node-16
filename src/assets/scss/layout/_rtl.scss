@@ -16,6 +16,50 @@
   .ProfileCard {
     text-align: right;
   }
+  .show-hide{
+    right: unset;
+    left: 20px;
+  }
+  .login-main{
+    p{
+      a.ms-2{
+        margin-left: 0.5rem !important;
+        margin-right: unset !important;
+      }
+    }
+  }
+  .login-card{
+    .btn-showcase{
+      .btn{
+        &:first-child{
+          margin-left: unset;
+        }
+        + .btn{
+          margin-left: unset;
+          margin-right: 5px;
+        }
+      }
+    }
+    .login-main{
+      .theme-form{
+        .or{
+          &::before{
+            right: unset;
+            left: 0;
+          }
+        }
+        .link{
+          right: unset;
+          left: 0;
+        }
+      }
+    }
+  }
+  .notification-dropdown{
+    .border-4{
+      border-width: 3px !important;
+    }
+  }
   .page-wrapper {
     .page-header {
       .header-wrapper {
@@ -4846,6 +4890,12 @@
     }
   }
   @media (max-width: 1199.98px) {
+    .left-header{
+      .mega-menu-container{
+        padding-left: unset;
+        padding-right: 20px;
+      }
+    } 
     .blog-single{
       .comment-box{
         ul{
@@ -4877,6 +4927,7 @@
         .mega-box {
           + .mega-box {
             padding-right: 15px;
+            padding-left: 12px;
             border-right: 0px;
           }
         }
@@ -5682,6 +5733,44 @@
     }
   }
   @media only screen and (max-width: 480px) {
+    .page-wrapper {
+      .page-header {
+        .header-wrapper {
+          .nav-right.right-header {
+            ul.chat-dropdown {
+              left: 0 !important;
+            }
+          }
+          .nav-right {
+            .onhover-show-div {
+              right: -135px !important;
+              left: unset !important;
+              &.chat-dropdown{
+                right: -210px !important;
+              }
+              li {
+                .media {
+                  img {
+                    margin-right: 0 !important;
+                  }
+                }
+              }
+            }
+            .cart-dropdown.onhover-show-div {
+              left: -60px !important;
+              right: unset !important;
+              li {
+                margin: 0 10px;
+              }
+              .close-circle {
+                right: unset;
+                left: -7px;
+              }
+            }
+          }
+        }
+      }
+    }
     .list-persons{
       .profile-mail{
         .email-general{

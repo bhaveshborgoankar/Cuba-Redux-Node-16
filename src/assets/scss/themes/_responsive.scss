@@ -285,6 +285,14 @@
 
 @media screen and (max-width: 1435px) and (min-width: 1200px) {
   .page-wrapper {
+    &.horizontal-wrapper{
+      .page-header{
+        .nav-right {
+          flex: 0 0 60%;
+          max-width: 60%;
+        }
+      }
+    }
     &.modern-type {
       .page-header {
         .nav-right {
@@ -1197,7 +1205,11 @@
   .left-header .mega-menu-container .mega-box .svg-icon ~ div h6 {
     display: none;
   }
-
+  .login-page{
+    &.p-0{
+      padding: 0 12px !important;
+    }
+  }
   .col-xl-7.b-center.bg-size {
     top: 0;
     height: 100vh;
@@ -1298,7 +1310,7 @@
   .left-header {
     .mega-menu-container {
       position: fixed;
-      width: 300px;
+      width: 290px;
       border: 1px solid rgb(238, 238, 238);
       top: 0px;
       height: 100vh;
@@ -4528,6 +4540,15 @@
 }
 
 @media (max-width: 575.98px) {
+  .login-card{
+    .login-main{
+      .login-btn{
+        .btn{
+          margin-top: 8px;
+        }
+      }
+    }
+  }
   .modal{
     .modal-bookmark{
       .modal-body{
@@ -6704,6 +6725,78 @@
 }
 
 @media (max-width: 480px) {
+  .page-wrapper {
+    .page-header {
+      .header-wrapper {
+        .nav-right {
+          .bookmark-flip.onhover-show-div{
+            right: -86px;
+          }
+          .notification-dropdown {
+            right: -120px !important;
+          }
+          .chat-dropdown.onhover-show-div {
+            right: -30px;
+          }
+          .cart-dropdown.onhover-show-div {
+            width: 282px;
+            right: -50px;
+            li {
+              &.text-center{
+                margin-bottom: 10px;
+              }
+              .media {
+                .media-body {
+                  a {
+                    > span {
+                      font-size: 13px;
+                    }
+                  }
+                }
+              }
+            }
+            .close-circle {
+              right: -7px;
+            }
+          }
+          .onhover-show-div {
+            width: 270px;
+            right: -90px;
+            &::before,
+            &::after {
+              display: none;
+            }
+            li {
+              .media {
+                img {
+                  margin-right: 10px !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .default-datepicker{
+    .react-datepicker__navigation{
+      top: 14px;
+    }
+  } 
+  .login-card{
+    .login-main{
+      width: 265px;
+      &.login-tab{
+        .tab-content{
+          height: 525px;
+        }
+      }
+      .border-tab.nav-tabs{
+        width: auto !important;
+        flex-wrap: nowrap;
+      }
+    }
+  } 
   .product-modal{
     .modal-header{
       padding: 0 !important;

@@ -8,6 +8,38 @@
   background-color: rgba($white, 0.5);
 
   @media only screen and (min-width: 1280px) {
+    .project-box{
+      .badge{
+        right: 15px;
+      }
+    }
+    .page-wrapper{
+      &.compact-wrapper{
+        .sidebar-wrapper{
+          &:not(.close_icon){
+            ~ footer{
+              padding-left: 245px;
+            }
+          }
+        }
+      }
+    } 
+    .chart_data_left{
+      .card-body{
+        .chart-main{
+          div[class*="col-"]{
+            &:first-child, &:nth-child(2){
+              .media{
+                border-bottom: 1px solid $light-gray;
+              }
+            }
+          }
+        }
+      }
+    }
+    .page-wrapper.only-body{
+      background-color: unset;
+    }
     .page-wrapper{
       &.compact-sidebar{
         &.compact-small{
@@ -32,6 +64,11 @@
         } 
         &.modern-type{
           .page-header{
+            &.close_icon{
+              .header-wrapper{
+                padding-left: 30px;
+              }
+            }
             .header-wrapper{
               .toggle-sidebar{
                 left: 0;
@@ -282,6 +319,13 @@
         }
       }
       &.horizontal-wrapper {
+        &.enterprice-type, &.material-type{
+          .page-body-wrapper{
+            .page-body{
+              max-height: calc(100vh - 255px);
+            }
+          }
+        }
         &:before {
           display: none;
         }
