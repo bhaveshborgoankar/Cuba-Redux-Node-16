@@ -45,7 +45,7 @@ const Register = (props) => {
                     <Label className='col-form-label'>{EmailAddress}</Label>
                     <Input className='form-control' type='email' required='' placeholder='Test@gmail.com' />
                   </FormGroup>
-                  <FormGroup>
+                  <FormGroup className="position-relative">
                     <Label className='col-form-label'>{Password}</Label>
                     <Input
                       className='form-control'
@@ -61,7 +61,7 @@ const Register = (props) => {
                     </div>
                   </FormGroup>
                   <div className='login-btn mb-0'>
-                    <div className='checkbox ms-3'>
+                    <div className='checkbox'>
                       <Input id='checkbox1' type='checkbox' />
                       <Label className='text-muted' for='checkbox1'>
                         {'Agree with'}
@@ -70,12 +70,12 @@ const Register = (props) => {
                         </a>
                       </Label>
                     </div>
-                    <Button color='primary' type='submit'>
+                    <Button className="w-100" color='primary' type='submit'>
                       {CreateAccount}
                     </Button>
                   </div>
                   <h6 className='text-muted mt-4 or'>{'Or signup with'}</h6>
-                  <div className='social mt-4'>
+                  <div className='social text-center mt-4'>
                     <div className='btn-showcase'>
                       <Button color='light'>
                         <Facebook className='txt-fb' />
@@ -91,7 +91,7 @@ const Register = (props) => {
                       </Button>
                     </div>
                   </div>
-                  <p className='mt-4 mb-0'>
+                  <p className='mt-4 text-center mb-0'>
                     {'Already have an account?'}
                     <a className='ms-2' href='#javascript'>
                       {SignIn}

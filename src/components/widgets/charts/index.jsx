@@ -6,7 +6,8 @@ import Chart from 'react-apexcharts'
 import { ShoppingBag, TrendingUp, Navigation } from 'react-feather'
 import { Sparklines, SparklinesLine, SparklinesSpots } from 'react-sparklines'
 import { SALE, PRODUCTS, PROJECTS, MarketinExpenses, TotalEarning, SkillStatus, OrderStatus, LiveProducts, Turnover, MonthlySales, Uses, BrowserUses, Finance } from '../../../constant'
-const primary = localStorage.getItem('default_color')
+import configDB from '../../../data/customizer/config'
+const primary = localStorage.getItem('default_color') || configDB.data.color.primary_color;
 
 const Charts = () => {
 
@@ -68,7 +69,7 @@ const Charts = () => {
               <div className="chart-widget-top">
                 <Row className="card-body">
                   <Col xs="8">
-                    <h6 className="f-w-600 font-success">{PROJECTS}</h6><span className="num"><span className="counter">{"30"}</span>{"%"}<i className="icon-angle-up f-12 ms-1"></i></span>
+                    <h6 className="f-w-600 font-secondary">{PROJECTS}</h6><span className="num"><span className="counter">{"30"}</span>{"%"}<i className="icon-angle-up f-12 ms-1"></i></span>
                   </Col>
                   <Col xs="4" className="text-end">
                     <h4 className="num total-value"><span className="counter">{"12569"}</span></h4>

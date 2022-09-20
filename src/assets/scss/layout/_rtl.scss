@@ -55,6 +55,11 @@
       }
     }
   }
+  .square-product-setting{
+    .icon-grid{
+      margin: 0 0 0 10px;
+    }
+  }
   .notification-dropdown{
     .border-4{
       border-width: 3px !important;
@@ -1500,10 +1505,10 @@
   .widget-joins {
     .row {
       .pe-0 {
-        padding-right: 15px !important;
+        padding-right: 12px !important;
       }
       .ps-0 {
-        padding-right: 15px !important;
+        padding-right: 12px !important;
       }
     }
   }
@@ -4134,7 +4139,7 @@
     }
   }
   .prooduct-details-box {
-    .btn-close {
+    .close {
       right: unset;
       left: 10px;
     }
@@ -4722,6 +4727,51 @@
     }
   }
   // responsive css
+  @media screen and (max-width: 1880px) and (min-width: 1661px) {
+    .chart_data_left {
+      .card-body {
+        .chart-main {
+          .media {
+            .media-body {
+              .right-chart-content {
+                margin-right: 10px;
+                margin-left: unset;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1760px) and (min-width: 1661px) {
+    .our-product{
+      table{
+        tr{
+          td{
+            padding: 20px 6px 0;
+          }
+        }
+      }
+    }
+    .product-social {
+      li {
+        padding-right: unset;
+        padding-left: 6px;
+      }
+    }
+    .appointment-table {
+      table {
+        tr {
+          td {
+            &:nth-child(2) {
+              padding-right: 10px;
+              padding-left: unset;
+            }
+          }
+        }
+      }
+    }
+  }
   @media screen and (max-width: 1660px) {
     // video chat page
     .caller-img {
@@ -4782,9 +4832,6 @@
     .d-none-productlist {
       margin-left: 10px;
       margin-right: unset;
-    }
-    .product-sidebar {
-      transform: translateX(300px) scaleX(0);
     }
     .photos {
       ul {
@@ -4858,6 +4905,78 @@
       }
     }
   }
+  @media screen and (max-width: 1366px) and (min-width: 1200px) {
+    .learning-comment {
+      &.float-md-end {
+        float: right !important;
+        margin-right: 0 !important;
+        margin-left: unset !important;
+      }
+    }
+    .blog-box {
+      .blog-details {
+        .blog-social {
+          li {
+            &:first-child {
+              padding-left: 20px;
+              padding-right: unset;
+            }
+            &:nth-child(2),
+            &:nth-child(3) {
+              padding-left: 0;
+            }
+            + li {
+              padding-left: 20px;
+              padding-right: unset;
+              margin-right: 18px;
+            }
+          }
+        }
+      }
+    }
+    .bookmark-wrap {
+      .left-bookmark {
+        ul {
+          li {
+            svg {
+              margin-left: 0 !important;
+              margin-right: unset !important;
+            }
+          }
+        }
+      }
+    }
+    .chat-box {
+      .about {
+        padding-right: 6px;
+        padding-left: unset;
+      }
+    }
+    .appointment-table {
+      table {
+        tr {
+          td {
+            &:nth-child(2) {
+              padding-right: 12px;
+              padding-left: unset;
+            }
+          }
+        }
+      }
+    }
+    .left-header {
+      .mega-menu-container {
+        .mega-box {
+          + .mega-box {
+            + .mega-box {
+              padding-right: 20px;
+              padding-left: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
   @media (min-width: 1200px) {
     // chat page
     .chat-box {
@@ -4890,6 +5009,19 @@
     }
   }
   @media (max-width: 1199.98px) {
+    .email-wrap {
+      .email-right-aside {
+        .email-body.card{
+          border-radius: 15px;
+        }
+        .email-body {
+          border-radius: 15px;
+          &.radius-left.card {
+            border-radius: 15px !important;
+          }
+        }
+      }
+    }
     .left-header{
       .mega-menu-container{
         padding-left: unset;
@@ -5396,6 +5528,23 @@
     }
   }
   @media (max-width: 767.98px) {
+    .text-md-end{
+      text-align: left;
+    }
+    .feature-products{
+      .filter-toggle{
+        margin-left: unset;
+        margin-right: 10px;
+      }
+      .select2-drpdwn-product{
+        float: right;
+        margin-right: unset;
+        margin-left: 10px;
+      }
+      .text-end{
+        text-align: right !important;
+      }
+    }
     .page-wrapper.compact-wrapper .left-header .mega-menu {
       right: 80px;
       .nav-link {
@@ -5539,6 +5688,16 @@
     }
   }
   @media (max-width: 575.98px) {
+    .widget-joins {
+      .row {
+        .pe-0 {
+          padding-left: 12px !important;
+        }
+        .ps-0 {
+          padding-right: 12px !important;
+        }
+      }
+    }
     .comment-box{
       ul{
         ul{

@@ -831,7 +831,7 @@ export const totalearning = {
         'Sep', 'Oct', 'Nov', 'Dec'
       ],
       labels: {
-        show: true
+        show: false
       },
       axisBorder: {
         show: false

@@ -33,12 +33,12 @@ const Forgetpwd = (props) => {
                         <Col md="9">
                           <Input className="form-control mb-1" type="tel" defaultValue="000-000-0000"/>
                         </Col>
-                        <Col xs="12">
+                        <Col xs="12 text-end">
                           <Button color="primary" className="m-t-10" type="submit">{Send}</Button>
                         </Col>
                       </Row>
                     </FormGroup>
-                    <div className="text-center mt-4 mb-4"><span className="reset-password-link">{"If don't receive OTP?"}  <a className="btn-link font-danger" href="#javascript">{Resend}</a></span></div>
+                    <div className="mt-4 mb-4"><span className="reset-password-link">{"If don't receive OTP?"}  <a className="btn-link font-danger" href="#javascript">{Resend}</a></span></div>
                     <FormGroup>
                       <Label className="col-form-label pt-0">{EnterOTP}</Label>
                       <Row>
@@ -54,7 +54,7 @@ const Forgetpwd = (props) => {
                       </Row>
                     </FormGroup>
                     <h6 className="mt-4">{"Create Your Password"}</h6>
-                    <FormGroup>
+                    <FormGroup className="position-relative">
                       <Label className="col-form-label">{NewPassword}</Label>
                       <Input className="form-control" type={togglePassword ? "text" : "password" } name="login[password]" value={password} onChange={(e) => handleChange(e)} required="" placeholder="*********"/>
                       <div className="show-hide" onClick={() => HideShowPassword(togglePassword)}><span className={togglePassword ? "" : "show"}></span></div>
@@ -64,13 +64,13 @@ const Forgetpwd = (props) => {
                       <Input className="form-control" type="password" name="login[password]" required="" placeholder="*********"/>
                     </FormGroup>
                     <FormGroup className="mb-0">
-                      <div className="checkbox ms-3">
+                      <div className="checkbox">
                         <Input id="checkbox1" type="checkbox"/>
                         <Label className="text-muted" for="checkbox1">{RememberPassword}</Label>
                       </div>
-                      <Button color="primary" type="submit">{Done}</Button>
+                      <Button className="d-block w-100" color="primary" type="submit">{Done}</Button>
                     </FormGroup>
-                    <p className="mt-4 mb-0">{"Already have an password?"}<a className="ms-2" href="#javascript">{SignIn}</a></p>
+                    <p className="mt-4 mb-0 text-center">{"Already have an password?"}<a className="ms-2" href="#javascript">{SignIn}</a></p>
                   </Form>
                 </div>
               </div>

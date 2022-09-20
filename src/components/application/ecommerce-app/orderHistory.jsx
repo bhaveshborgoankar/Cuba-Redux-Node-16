@@ -44,7 +44,7 @@ const OrderHistory = (props) => {
                             </div>
                             <div className="avaiabilty">
                               <div className="text-success">{items.stock}</div>
-                            </div><Button color="primary" size="xs">{items.prdouctstatus}</Button><X className="btn-close" />
+                            </div><Button color="primary" size="xs">{items.prdouctstatus}</Button><X className="close" />
                           </div>
                         </div>
                       </div>
@@ -81,7 +81,7 @@ const OrderHistory = (props) => {
                             </div>
                             <div className="avaiabilty">
                               <div className="text-success">{items.stock}</div>
-                            </div><Button color="success" size="xs">{items.prdouctstatus}</Button><X className="btn-close" />
+                            </div><Button color="success" size="xs">{items.prdouctstatus}</Button><X className="close" />
                           </div>
                         </div>
                       </div>
@@ -118,7 +118,7 @@ const OrderHistory = (props) => {
                             </div>
                             <div className="avaiabilty">
                               <div className="text-success">{items.stock}</div>
-                            </div><Button color="danger" size="xs">{items.prdouctstatus}</Button><X className="btn-close" />
+                            </div><Button color="danger" size="xs">{items.prdouctstatus}</Button><X className="close" />
                           </div>
                         </div>
                       </div>

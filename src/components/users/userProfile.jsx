@@ -222,7 +222,7 @@ const UserProfile = (props) => {
                   </Row>
                   <hr />
                   <Row>
-                    <Col lg="12" xl="4">
+                    <Col lg="12" xl="4 box-col-5">
                       <div id="aniimated-thumbnials-3"><a href="#javascript"><Media body className="img-fluid rounded" src={require("../../assets/images/blog/img.png")} alt="gallery" /></a></div>
                       <div className="like-comment mt-4 like-comment-lg-mb">
                         <ul className="list-inline">
@@ -235,7 +235,7 @@ const UserProfile = (props) => {
                         </ul>
                       </div>
                     </Col>
-                    <Col xl="6">
+                    <Col xl="6 box-col-7">
                       <p>{UserProfileDesc3}</p>
                     </Col>
                   </Row>

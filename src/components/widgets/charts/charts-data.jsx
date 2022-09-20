@@ -176,7 +176,7 @@ export const lineChart3 = {
             }
         },
         fill: {
-            colors:['#7366ff'],
+            colors:['#51bb25'],
             type: 'gradient',
             gradient: {
                 shade: 'light',
@@ -189,7 +189,7 @@ export const lineChart3 = {
             },
 
         },
-        colors:['#7366ff'],
+        colors:['#51bb25'],
         tooltip: {
             x: {
                 format: 'dd/MM/yy HH:mm'
@@ -211,7 +211,10 @@ export const barChart = {
     },
     chart: {
           type: 'bar',
-          height: 380
+          height: 380,
+          toolbar: {
+            show: false
+        },
         },
     plotOptions: {
         bar: {
@@ -285,6 +288,9 @@ export const radialChart = {
         chart: {
         height: 350,
         type: 'radialBar',
+        toolbar: {
+            show: false
+        },
       },
       plotOptions: {
         radialBar: {
@@ -337,6 +343,9 @@ export const radialChartLive = {
             width: 450,
             height: 350,
             type: "radialBar",
+            toolbar: {
+                show: false
+            },
             animations: {
                 enabled: true,
                 easing: 'linear',
@@ -370,6 +379,15 @@ export const radialChartLive = {
             },
         }
     },
+    responsive: [{
+        breakpoint: 480,
+        options: {
+          chart: {
+            width: 450,
+            height: 450
+          }
+        }
+      }],
     series: [71, 63],
     labels: ['Device 1', 'Device 2'],
 }
@@ -708,7 +726,7 @@ export const columnChart = {
     options: {
         chart: {
             toolbar: {
-                show: true
+                show: false
             }
         },
         legend: {
@@ -792,7 +810,10 @@ export const product = {
         chart: {
             width: 855,
             height: 320,
-            type: "line"
+            type: "line",
+            toolbar: {
+                show: false
+            },
         },
         colors: [primary, secondary],
         stroke: {
@@ -927,6 +948,9 @@ export const turnOver = {
         chart: {
             height: 320,
             type: 'area',
+            toolbar: {
+                show: false
+            },
             zoom: {
                 enabled: false
             }
@@ -997,6 +1021,9 @@ export const monthlySale = {
         chart: {
             height: 300,
             type: 'radar',
+            toolbar: {
+                show: false
+            },
             dropShadow: {
                 enabled: true,
                 blur: 1,
@@ -1130,5 +1157,3 @@ export const uses = {
     }
     ]
 }
-
-

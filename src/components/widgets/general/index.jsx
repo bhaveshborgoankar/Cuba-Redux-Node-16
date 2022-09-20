@@ -806,7 +806,7 @@ const General = () => {
                   </div>
                   <div className="cal-desc text-center card-body">
                     <h6 className="f-w-600">{"I must explain to you how all this mistaken idea truth"}</h6>
-                    <p className="text-muted mt-3 mb-0">{"Denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth,Letraset sheets containing Lorem Ipsum passages."}</p>
+                    <p className="text-muted mt-2 mb-0">{"Denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth,Letraset sheets containing Lorem Ipsum passages."}</p>
                   </div>
                 </div>
               </Card>

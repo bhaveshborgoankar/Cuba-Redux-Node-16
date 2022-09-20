@@ -16,7 +16,123 @@
     }
   }
 }
-
+@media screen and (max-width: 1880px) and (min-width: 1661px){
+  .chart_data_left{
+    .card-body{
+      .chart-main{
+        .media{
+          padding: 45px 30px;
+          .media-body{
+            .right-chart-content{
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }     
+}
+@media screen and (max-width: 1760px) and (min-width: 1661px){
+  .ecommerce-widget{
+    .progress-showcase{
+      margin-top: 10px;
+    }
+  } 
+  .crm-activity{
+    > li{
+      + li{
+        margin-top: 6px;
+        padding-top: 6px;
+      }
+    }
+  }
+  .testimonial{
+    p{
+      margin-top: 6px;
+      margin-bottom: 6px;
+    }
+  }
+  .offer-slider{
+    .selling-slide{
+      margin-top: 24px;
+    }
+  }
+  .activity-timeline{
+    .media{
+      + .media{
+        margin-top: 30px;
+      }
+    }
+  }
+  .xl-cs-35{
+    .card{
+      .card-body{
+        padding: 34px;
+      }
+    }
+  }
+  .product-button{
+    .btn{
+      padding: 6px 18px;
+    }
+  }
+  .product-social{
+    li{
+      padding-right: 6px;
+    }
+  }
+  .cal-desc{
+    &.card-body{
+      padding: 30px;
+    }
+  }
+  .user-status.table-responsive{
+    table{
+      tr{
+        td,th{
+          &:first-child{
+            min-width: 284px;
+          }
+          &:nth-child(3){
+            min-width: 108px;
+          }
+        }
+      }
+    }
+  }
+  .our-product{
+    table{
+      tr{
+        td{
+          padding: 20px 14px 0;
+        }
+      }
+    }
+  }
+  .appointment-table{
+    table{
+      tr{
+        td{
+          &:nth-child(2){
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+  }
+  .profile-greeting{
+    .greeting-user{
+      margin: 30px 0;
+    }
+  } 
+  .earning-card.card{
+    .card-body{
+      .border-top{
+        padding: 40px 20px;
+      }
+    }
+  }  
+}
 @media (max-width: 1660px) {
   .photos {
     ul {
@@ -164,6 +280,13 @@
       }
     }
   }
+}
+@media (max-width: 1470px) and (min-width: 1400px) {
+  .login-card{
+    .login-main{
+      width: 400px;
+    }
+  } 
 }
 @media (max-width: 1470px) {
   .pricing-block {
@@ -338,11 +461,73 @@
   .flot-chart-container-small {
     height: 227px;
   }
-
+  .email-wrap{
+    .email-right-aside{
+      .email-body{
+        .inbox{
+          .media{
+            label{
+              text-align: center;
+              margin-bottom: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
   .left-header .mega-menu-container {
     min-width: 920px;
   }
-
+  .product-wrapper{
+    .product-sidebar{
+      .filter-section{
+        .card{
+          .left-filter{
+            .filter-cards-view{
+              .product-box{
+                .product-details{
+                  padding: 4px;
+                  .product-price{
+                    font-size: 14px;
+                  }
+                }
+              } 
+              &.card-body{
+                padding: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .bookmark-tabcontent{
+    .details-bookmark{
+      &.list-bookmark{
+        .bookmark-card.card{
+          .desciption-data{
+            width: 60%;
+          }
+        }
+      }
+    }
+  }   
+  .email-wrap{
+    .btn-mail{
+      padding: 13px 10px;
+    }
+  } 
+  .bookmark-wrap{
+    .left-bookmark{
+      ul{
+        li{
+          svg{
+            margin-right: 0 !important;
+          }
+        }
+      }
+    }
+  }
   .call-chat-sidebar {
     max-width: 260px;
   }
@@ -1210,7 +1395,19 @@
       padding: 0 12px !important;
     }
   }
-  .col-xl-7.b-center.bg-size {
+  .email-wrap{
+    .email-right-aside{
+      .email-body.card{
+        border-radius: 15px;
+      }
+      &.email-page{
+        .email-body.card{
+          border-radius: 15px;
+        }
+      }
+    }
+  } 
+  .col-xl-7.b-center.bg-size, .col-xl-5.b-center.bg-size {
     top: 0;
     height: 100vh;
     opacity: 0.5;
@@ -1865,11 +2062,13 @@
         .b-r-light {
           border-right: none !important;
         }
+        &.radius-left.card{
+          border-radius: 15px;
+        }
       }
 
       .radius-left {
-        border-top-left-radius: 4px !important;
-        border-bottom-left-radius: 4px !important;
+        border-radius: 15px;
       }
     }
 
@@ -4540,9 +4739,25 @@
 }
 
 @media (max-width: 575.98px) {
+  .product-sidebar{
+    width: 268px;
+  }
+  .widget-joins {
+    .row {
+      .pe-0 {
+        padding-right: 12px !important;
+      }
+      .ps-0 {
+        padding-left: 12px !important;
+      }
+    }
+  }
   .login-card{
     .login-main{
-      .login-btn{
+      &.login-tab{
+        margin-top: 70px;
+      }
+      .login-btn, .position-relative{
         .btn{
           margin-top: 8px;
         }
@@ -4868,7 +5083,7 @@
       }
       &.login-tab {
         .tab-content {
-          height: 495px;
+          height: 556px;
         }
         .auth-content {
           img {
@@ -6725,6 +6940,11 @@
 }
 
 @media (max-width: 480px) {
+  .product-sidebar{
+    &.open{
+      top: -80px;
+    }
+  }
   .page-wrapper {
     .page-header {
       .header-wrapper {
@@ -6786,11 +7006,6 @@
   .login-card{
     .login-main{
       width: 265px;
-      &.login-tab{
-        .tab-content{
-          height: 525px;
-        }
-      }
       .border-tab.nav-tabs{
         width: auto !important;
         flex-wrap: nowrap;
@@ -7286,6 +7501,13 @@
   }
 }
 @media (max-width: 420px) {
+  .email-wrap{
+    .email-right-aside{
+      &.email-page{
+        height: calc(100% - 22px);
+      }
+    }
+  }
   .search-page{
     .form-control-plaintext {
       width: 100px !important;

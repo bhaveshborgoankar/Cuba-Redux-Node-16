@@ -59,10 +59,10 @@ class Invoice extends React.Component {
                               </h3>
                               <p>
                                 {IssuedMay}
-                                <span className="digits">{" 27, 2015"}</span>
+                                <span className="digits">{" 27, 2022"}</span>
                                 <br />
                                 {PaymentDue}{" "}
-                                <span className="digits">{"27, 2015"}</span>
+                                <span className="digits">{"27, 2022"}</span>
                               </p>
                             </div>
                           </Col>

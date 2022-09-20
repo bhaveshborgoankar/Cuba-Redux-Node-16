@@ -50,9 +50,11 @@
       h4 {
         margin-bottom: 5px;
       }
-
+      .mb-3{
+        margin-bottom: 10px !important;
+      }
       label {
-        font-size: 15px;
+        font-size: 14px;
         letter-spacing: 0.4px;
       }
 
@@ -79,7 +81,8 @@
       input {
         background-color: #f3f3ff;
         transition: all 0.3s ease;
-
+        padding: 12px 10px;
+        border: 1px solid transparent;
         &::-webkit-input-placeholder {
           color: $light-text;
         }
@@ -188,7 +191,7 @@
         }
       }
       .tab-content {
-        height: 458px;
+        height: 504px;
       }
 
       
@@ -220,7 +223,7 @@
 
 .show-hide {
   position: absolute;
-  top: 55px;
+  top: 60px;
   right: 20px;
   transform: translateY(-50%);
 

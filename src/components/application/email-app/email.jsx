@@ -138,7 +138,7 @@ const Email = (props) => {
                       </Media>
                       <ul className="nav main-menu" role="tablist">
                         <li className="nav-item">
-                          <a className="btn-primary btn-mail" onClick={clickCompose} href="#javascript">
+                          <a className="btn btn-primary btn-mail" onClick={clickCompose} href="#javascript">
                             <i className="icofont icofont-envelope me-2"></i>
                             {NEWMAIL}
                           </a>
@@ -372,8 +372,8 @@ const Email = (props) => {
                 </Card>
               </div>
             </Col>
-            <Col xl="6" md="12 box-col-12">
-              <div className="email-right-aside">
+            <Col xl="6" md="12 box-col-12 email-content-sec">
+              <div className="email-right-aside email-page">
                 <Card className="email-body radius-left">
                   <div className="ps-0">
                     <div className="tab-content">

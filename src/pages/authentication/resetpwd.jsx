@@ -24,7 +24,7 @@ const Resetpwd = (props) => {
                 <div className="login-main"> 
                   <Form className="theme-form">
                     <h4>{"Create Your Password"}</h4>
-                    <FormGroup>
+                    <FormGroup className="position-relative">
                       <Label className="col-form-label">{NewPassword}</Label>
                       <Input className="form-control" type={togglePassword ?  "text" : "password" } name="login[password]" value={password} onChange={(e) => handleChange(e)} required="" placeholder="*********"/>
                       <div className="show-hide" onClick={() => HideShowPassword(togglePassword)}><span className={togglePassword ? "" : "show"}></span></div>
@@ -34,11 +34,11 @@ const Resetpwd = (props) => {
                       <Input className="form-control" type="password" name="login[password]" required="" placeholder="*********"/>
                     </FormGroup>
                     <FormGroup className="mb-0">
-                      <div className="checkbox ms-3">
+                      <div className="checkbox">
                         <Input id="checkbox1" type="checkbox"/>
                         <Label className="text-muted" for="checkbox1">{RememberPassword}</Label>
                       </div>
-                      <Button color="primary" type="submit">{Done}</Button>
+                      <Button className="w-100" color="primary" type="submit">{Done}</Button>
                     </FormGroup>
                     <p className="mt-4 mb-0">{"Don't have account?"}<a className="ms-2" href="#javascript">{CreateAccount}</a></p>
                   </Form>

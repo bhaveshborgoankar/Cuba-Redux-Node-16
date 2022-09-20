@@ -24,13 +24,13 @@ const UnlockUser = (props) => {
                   <div className="login-main">
                     <Form className="theme-form">
                       <h4>{Unlock}</h4>
-                      <FormGroup>
+                      <FormGroup className="position-relative">
                         <Label className="col-form-label">{EnterPassword}</Label>
                         <Input className="form-control" type={togglePassword ?  "text" : "password" } name="login[password]" value={password} onChange={(e) => handleChange(e)} required="" placeholder="*********"/>
                         <div className="show-hide" onClick={() => HideShowPassword(togglePassword)}><span className={togglePassword ? "" : "show"}></span></div>
                       </FormGroup>
                       <FormGroup className="mb-0">
-                        <div className="checkbox ms-3">
+                        <div className="checkbox">
                           <Input id="checkbox1" type="checkbox"/>
                           <Label className="text-muted" for="checkbox1">{RememberPassword}</Label>
                         </div>

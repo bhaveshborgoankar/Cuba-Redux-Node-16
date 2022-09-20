@@ -25,7 +25,7 @@ const LoginWithBgVideo = (props) => {
           xl='5'
           className='b-center bg-size'
           style={{ backgroundImage: `url(${require('../../assets/images/login/3.jpg')})`, backgroundSize: 'cover', backgroundPosition: 'center', display: 'block' }}>
-          <img className='bg-img-cover bg-center' src={require('../../assets/images/login/3.jpg')} alt='looginpage' />
+          <img className='bg-img-cover bg-center' src={require('../../assets/images/login/3.jpg')} alt='looginpage' style={{ display: 'none' }} />
         </Col>
         <Col xl='7' className='p-0'>
           <div className='login-card'>
@@ -66,7 +66,7 @@ const LoginWithBgVideo = (props) => {
                         <Label className='col-form-label'>{EmailAddress}</Label>
                         <Input className='form-control' type='email' required='' placeholder='Test@gmail.com' />
                       </FormGroup>
-                      <FormGroup>
+                      <FormGroup className="position-relative">
                         <Label className='col-form-label'>{Password}</Label>
                         <Input
                           className='form-control'
@@ -81,8 +81,8 @@ const LoginWithBgVideo = (props) => {
                           <span className={togglePassword ? '' : 'show'}></span>
                         </div>
                       </FormGroup>
-                      <FormGroup className='mb-0'>
-                        <div className='checkbox ms-3'>
+                      <FormGroup className='mb-0 position-relative'>
+                        <div className='checkbox'>
                           <Input id='checkbox1' type='checkbox' />
                           <Label className='text-muted' for='checkbox1'>
                             {RememberPassword}
@@ -91,10 +91,10 @@ const LoginWithBgVideo = (props) => {
                         <a className='link' href='#javascript'>
                           {ForgotPassword}
                         </a>
-                        {selected === 'firebase' ? <Button color='primary'>{SignIn}</Button> : <Button color='primary'>{LoginWithJWT}</Button>}
+                        {selected === 'firebase' ? <Button className="w-100" color='primary'>{SignIn}</Button> : <Button className="w-100" color='primary'>{LoginWithJWT}</Button>}
                       </FormGroup>
                       <h6 className='text-muted mt-4 or'>{'Or Sign in with'}</h6>
-                      <div className='social mt-4'>
+                      <div className='social text-center mt-4'>
                         <div className='btn-showcase'>
                           <Button color='light'>
                             <Facebook className='txt-fb' />
@@ -110,7 +110,7 @@ const LoginWithBgVideo = (props) => {
                           </Button>
                         </div>
                       </div>
-                      <p className='mt-4 mb-0'>
+                      <p className='mt-4 text-center mb-0'>
                         {"Don't have account?"}
                         <a className='ms-2' href='#javascript'>
                           {CreateAccount}

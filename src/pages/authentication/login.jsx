@@ -76,7 +76,7 @@ const Logins = (props) => {
                         </div>
                       </div>
                       <div className='login-btn mb-0'>
-                        <div className='checkbox ms-3'>
+                        <div className='checkbox'>
                           <Input id='checkbox1' type='checkbox' />
                           <Label className='text-muted' for='checkbox1'>
                             {RememberPassword}
@@ -85,10 +85,10 @@ const Logins = (props) => {
                         <a className='link' href='#javascript'>
                           {ForgotPassword}
                         </a>
-                        {selected === 'firebase' ? <Button color='primary'>{SignIn}</Button> : <Button color='primary'>{LoginWithJWT}</Button>}
+                        {selected === 'firebase' ? <Button className="w-100" color='primary'>{SignIn}</Button> : <Button className="w-100" color='primary'>{LoginWithJWT}</Button>}
                       </div>
                       <h6 className='text-muted mt-4 or'>{'Or Sign in with'}</h6>
-                      <div className='social mt-4'>
+                      <div className='social text-center mt-4'>
                         <div className='btn-showcase'>
                           <Button color='light'>
                             <Facebook className='txt-fb' />
@@ -104,7 +104,7 @@ const Logins = (props) => {
                           </Button>
                         </div>
                       </div>
-                      <p className='mt-4 mb-0'>
+                      <p className='mt-4 text-center mb-0'>
                         {"Don't have account?"}
                         <a className='ms-2' href='#javascript'>
                           {CreateAccount}

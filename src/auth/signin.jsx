@@ -208,7 +208,7 @@ const Logins = (props) => {
                         </div>
                       </div>
                       <div className='login-btn mb-0'>
-                        <div className='checkbox ms-1'>
+                        <div className='checkbox'>
                           <Input id='checkbox1' type='checkbox' />
                           <Label className='text-muted' for='checkbox1'>
                             {RememberPassword}

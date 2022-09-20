@@ -8,11 +8,28 @@
   background-color: rgba($white, 0.5);
 
   @media only screen and (min-width: 1280px) {
+    .email-wrap{
+      .email-content-sec{
+        padding-left: 12px;
+      }
+    }
     .project-box{
       .badge{
         right: 15px;
       }
     }
+    .email-wrap{
+      .email-right-aside{
+        .email-body.card{
+          border-radius: 15px;
+        }
+        .email-body{
+          &.radius-left.card{
+            border-radius: 15px;
+          }
+        }
+      }
+    }  
     .page-wrapper{
       &.compact-wrapper{
         .sidebar-wrapper{
