@@ -17,7 +17,7 @@ const KnowledgebaseComponent = () => {
     const [Data, setData] = useState([])
     const history = useNavigate();
     const clickApply = () => {
-        history(`${process.env.PUBLIC_URL}/app/learning/learning-detail/Dubai`);
+        history(`${process.env.PUBLIC_URL}/app/learning/learningdetail/Dubai`);
     }
 
     useEffect(() => {

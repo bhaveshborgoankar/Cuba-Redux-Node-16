@@ -251,19 +251,19 @@ const Leftbar = (props) => {
                 </a>
                 <ul className='header-level-sub-menu'>
                   <li>
-                    <Link to={`${process.env.PUBLIC_URL}/app/users/userProfile/${layout}`}>
+                    <Link to={`${process.env.PUBLIC_URL}/app/users/profile/${layout}`}>
                       <User />
                       <span>{UserProfile}</span>
                     </Link>
                   </li>
                   <li>
-                    <Link to={`${process.env.PUBLIC_URL}/app/users/userEdit/${layout}`}>
+                    <Link to={`${process.env.PUBLIC_URL}/app/users/edit/${layout}`}>
                       <UserMinus />
                       <span>{UserEdit}</span>
                     </Link>
                   </li>
                   <li>
-                    <Link to={`${process.env.PUBLIC_URL}/app/users/userCards/${layout}`}>
+                    <Link to={`${process.env.PUBLIC_URL}/app/users/cards/${layout}`}>
                       <UserCheck />
                       <span>{UsersCards}</span>
                     </Link>

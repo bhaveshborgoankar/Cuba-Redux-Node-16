@@ -38,7 +38,6 @@ const Newproject = (props) => {
   const handleChangeStatus = ({ meta, file }, status) => { }
 
   const AddProject = data => {
-    console.log("data", data);
     if (data !== '') {
       dispatch(addNewProject(data))
       props.history(`${process.env.PUBLIC_URL}/app/project/project-list/${layout}`)
